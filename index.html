@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h2>Lista de Tareas</h2>
+    <div class="wrapper">
+        <div class="container"></div>
+        <h2>Lista de Tareas</h2>
+            <div class="input-container">
+                <label for="taskInput">Agregar Tarea</label>
+                <input type="text" id="taskInput" placeholder="Nueva Tarea">
+                <button onclick="addTask()">+</button>
+            </div>
+            <div class="input-container">
+                <label for="descriptionInput">Agregar Descripción</label>
+                <input type="text" id="descriptionInput" placeholder="Descripción Tarea">
+                <button onclick="addDescription()">+</button>
+            </div>
+        </div>
+        <ul id="tasklist">
 
-    <input type="text" id="taskInput" placeholder="Nueva Tarea">
-    <button onclick="addTask()">Agregar Tarea</button>
-
-    <input type="text" id="taskInput" placeholder="Nueva Tarea">
-    <button onclick="addDescription()">Agregar descripción</button>
-
-
-    <ul id="tasklist">
-
-    </ul>
-    
+        </ul>
+    </div>
     <script src="crud.js"></script>
 </body>
+
 </html>
