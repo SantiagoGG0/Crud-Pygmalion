@@ -10,8 +10,8 @@
 
 <body>
     <div class="wrapper">
-        <div class="container"></div>
-        <h2>Lista de Tareas</h2>
+        <div class="container">
+            <h2>Lista de Tareas</h2>
             <div class="input-container">
                 <label for="taskInput">Agregar Tarea</label>
                 <input type="text" id="taskInput" placeholder="Nueva Tarea">
@@ -20,12 +20,10 @@
             <div class="input-container">
                 <label for="descriptionInput">Agregar Descripción</label>
                 <input type="text" id="descriptionInput" placeholder="Descripción Tarea">
-                <button onclick="addDescription()">+</button>
+                <button onclick="añadirDescripción()">+</button>
             </div>
         </div>
-        <ul id="tasklist">
-
-        </ul>
+        <ul id="tasklist"></ul>
     </div>
     <script src="index.js"></script>
 </body>
